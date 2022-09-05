@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  background-color: black;
+  transition: 0.3s;
+}
+header.butt {
+  background-color: white !important;
+  border-bottom: 1px solid black;
+}
+header.butt #naV #navB span {
+  background-color: black !important;
+}
+@media (max-width: 768px) {
+  header.butt #naV ul {
+    background-color: white !important;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+}
+header.butt #naV ul li a {
+  color: black !important;
+}
+header.butt #naV ul li a.hover {
+  background-color: rgb(69, 69, 69);
+}
+header.butt .logo h1 {
+  color: black;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+header nav.show ul {
+  right: 0%;
+  z-index: 800;
+  transition: 0.3s;
+}
+header nav.show #navB {
+  position: relative;
+  z-index: 1000;
+  transition: 0.3s;
+}
+header nav.show #navB span {
+  transition: 0.3s;
+}
+header nav.show #navB span:nth-child(2) {
+  transform: rotate(-500deg) scale(0.3);
+  opacity: 0;
+}
+header nav.show #navB span:first-child {
+  transform: rotate(45deg);
+  width: 40px;
+  margin: 0 auto;
+}
+header nav.show #navB span:last-child {
+  transform: rotate(-45deg);
+  width: 40px;
+  margin: 0 auto;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 0 !important;
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    display: block;
+    position: fixed;
+    width: 55%;
+    height: 100vh;
+    background-color: black;
+    right: -100%;
+    top: 0;
+    padding: 0;
+    padding-top: 64.5px;
+  }
+}
+header nav ul a {
+  padding: 15px 25px;
+  text-decoration: none;
+  color: white !important;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-family: "Kaushan Script", cursive;
+  transition: 0.3s;
+}
+header nav ul a:hover {
+  background-color: rgba(255, 255, 255, 0.268);
+  color: white !important;
+}
+@media (max-width: 768px) {
+  header nav ul a {
+    width: 100%;
+    display: block;
+    padding: 0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 2.5em;
+  }
+}
+header nav #navB {
+  display: block !important;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: translateX(-12313px);
+}
+@media (max-width: 768px) {
+  header nav #navB {
+    transform: translateX(0);
+  }
+}
+header nav #navB span {
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  display: block;
+  margin-bottom: 7px;
+  transition: 0.3s;
+}
+header nav #navB span:nth-child(2) {
+  transition: 1s;
+}
+header nav #navB span:first-child {
+  transition: 0.3s;
+}
+header nav #navB span:last-child {
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  header .logo {
+    padding-left: 10px;
+  }
+}
+header .logo h1 {
+  color: white;
+  font-family: "Satisfy", cursive;
+  cursor: progress;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  header .logo h1 {
+    font-size: 2.5em;
+  }
+}
+
+section {
+  padding: 80px 0;
+  background-color: white;
+  transition: 0.3s;
+}
+section.butt {
+  background-color: black !important;
+}
+section.butt h1 {
+  color: white;
+}
+section h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+section .tugma {
+  width: 140px;
+  height: 50px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 30px;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+}
+section .tugma.butt {
+  background-color: black !important;
+  border: 3px solid white !important;
+}
+section .tugma.butt .uyna {
+  background-color: white !important;
+  border: 1px solid black !important;
+  left: 88px !important;
+}
+
+.uyna {
+  width: 33%;
+  background-color: black;
+  border: 1px solid white;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */
